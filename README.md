@@ -1,4 +1,4 @@
-an efficient and highly customisable program to set dwm bar.
+#### an efficient and highly customisable program to set dwm bar.
 
 ### Installation and Usage
 > git clone https://github.com/nkitan/dwmbar
