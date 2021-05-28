@@ -1,33 +1,33 @@
 an efficient and highly customisable program to set dwm bar.
-Installation and Usage
 
-&gt; git clone https://github.com/nkitan/dwmbar
+### Installation and Usage
+> git clone https://github.com/nkitan/dwmbar
 
 
 change directory into dwmbar/
 
-&gt; cd dwmbar
+> cd dwmbar
 
 
 set the script as an executable
 
-&gt; chmod +x dwmbar.sh
+> chmod +x dwmbar.sh
 
 
 dwmbar is now ready, include it in your xinitrc to enable dwmbar at startup.
 clone the repository to your desired location
 
-&gt; git clone https://github.com/nkitan/dwmbar
+> git clone https://github.com/nkitan/dwmbar
 
 
 change directory into dwmbar/
 
-&gt; cd dwmbar
+> cd dwmbar
 
 
-set the script as an executable
+set the script as an executable for owner
 
-&gt; chmod +x dwmbar.sh
+> chmod +x dwmbar.sh
 
 
 dwmbar is now ready, include it in your xinitrc to enable dwmbar at startup.
