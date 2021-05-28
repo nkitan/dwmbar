@@ -1,0 +1,14 @@
+#!/bin/bash 
+
+vol="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
+status=""
+
+if [ $vol -le 100 ] && [ $vol -ge 60 ]; then
+    status=""
+elif [ $vol -lt 60 ] && [ $vol -gt 0 ]; then
+    status=""
+else
+    status=""
+fi
+
+printf "%s  %s " "${status}" "${vol}%"

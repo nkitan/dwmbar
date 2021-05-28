@@ -1,0 +1,4 @@
+#!/bin/bash
+
+updt="$(dnf check-update | wc -l)"
+printf "%s " "$updt"
