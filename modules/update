@@ -1,4 +1,20 @@
 #!/bin/bash
+set -ex
 
-updt="$(dnf check-update | wc -l)"
+OS=$(uname -s | tr A-Z a-z)
+
+case $OS in
+  linux)
+    source /etc/os-release
+    case $ID in
+      debian|ubuntu|mint
+        updt="$(apt list --upgradable | wc -l)"
+        ;;
+      
+      fedora|rhel|centos
+        updt="$(dnf check-update | wc -l)"
+        ;;
+      arch
+        updt="$(pacman -Qu | wc -l)"
+
 printf "%s " "$updt"
